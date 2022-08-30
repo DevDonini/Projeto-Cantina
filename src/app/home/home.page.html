@@ -17,33 +17,33 @@
     <div class="linha">
       <div class="produto">Hotdog</div>
       <div class="mostrador">
-        <ion-button>-</ion-button>
-        0
-        <ion-button>+</ion-button>
+        <ion-button (click)="removerHotdog()">-</ion-button>
+        {{ quantidadeHotdog }}
+        <ion-button (click)="adicionarHotdog()">+</ion-button>
       </div>
     </div>
 
     <div class="linha">
       <div class="produto">Coxinha</div>
       <div class="mostrador">
-        <ion-button>-</ion-button>
-        0
-        <ion-button>+</ion-button>
+        <ion-button (click)="removerCoxinha()">-</ion-button>
+        {{ quantidadeCoxinha }}
+        <ion-button (click)="adicionarCoxinha()">+</ion-button>
       </div>
     </div>
 
     <div class="linha">
       <div class="produto">Bala</div>
       <div class="mostrador">
-        <ion-button>-</ion-button>
-        0
-        <ion-button>+</ion-button>
+        <ion-button (click)="removerBala()">-</ion-button>
+        {{ quantidadeBala }}
+        <ion-button (click)="adicionarBala()">+</ion-button>
       </div>
     </div>
 
     <div class="linha resultado">
       <div>Total</div>
-      <div>R$ 0,00</div>
+      <div>{{ totalConta | currency: 'BRL' }}</div>
     </div>
 
   </div>
