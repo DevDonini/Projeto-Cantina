@@ -1,0 +1,18 @@
+.conteudo{
+  font-size: 2rem;
+  padding: 32px;
+}
+.linha{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mostrador{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.resultado{
+  margin-top: 64px;
+  font-weight: 700;
+}
