@@ -1,3 +1,24 @@
+ion-content{
+  --background: #f62f2f;
+}
+ion-fab-button{
+  --background: #f62f2f;
+  --background-activated: #da2727;
+}
+h1{
+  background: #fff;
+  padding: 32px;
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 900;
+  color: #f62f2f;
+  margin-top: 38px;
+}
+.produto{
+  color: #f2da05;
+  font-weight: 700;
+}
 .conteudo{
   font-size: 2rem;
   padding: 32px;
@@ -11,8 +32,20 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  ion-button{
+    --background: #fff;
+    --background-activated: #aaa;
+    --color: #000;
+  }
+  input{
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+  }
 }
 .resultado{
+  color: #fff;
   margin-top: 64px;
   font-weight: 700;
 }

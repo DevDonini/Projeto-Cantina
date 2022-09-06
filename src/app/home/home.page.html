@@ -1,24 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Cantina da tina
-    </ion-title>
-
-    <ion-buttons slot="end">
-      <ion-button>Limpar</ion-button>
-    </ion-buttons>
-
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <div class="conteudo">
 
+  <h1>Cantina da Tina</h1>
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="limpar()">
+      <ion-icon name="trash"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <div class="conteudo">
     <div class="linha">
       <div class="produto">Hotdog</div>
       <div class="mostrador">
         <ion-button (click)="removerHotdog()">-</ion-button>
-        {{ quantidadeHotdog }}
+        <input type="number" [(ngModel)]="quantidadeHotdog" (keyup)="calcularTotalConta()">
         <ion-button (click)="adicionarHotdog()">+</ion-button>
       </div>
     </div>
@@ -27,7 +22,7 @@
       <div class="produto">Coxinha</div>
       <div class="mostrador">
         <ion-button (click)="removerCoxinha()">-</ion-button>
-        {{ quantidadeCoxinha }}
+        <input type="number" [(ngModel)]="quantidadeCoxinha" (keyup)="calcularTotalConta()">
         <ion-button (click)="adicionarCoxinha()">+</ion-button>
       </div>
     </div>
@@ -36,7 +31,7 @@
       <div class="produto">Bala</div>
       <div class="mostrador">
         <ion-button (click)="removerBala()">-</ion-button>
-        {{ quantidadeBala }}
+        <input type="number" [(ngModel)]="quantidadeBala" (keyup)="calcularTotalConta()">
         <ion-button (click)="adicionarBala()">+</ion-button>
       </div>
     </div>

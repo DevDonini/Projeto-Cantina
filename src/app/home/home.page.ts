@@ -55,4 +55,11 @@ export class HomePage {
     this.totalConta += this.quantidadeCoxinha * 3.5;
     this.totalConta += this.quantidadeBala * 0.25;
   }
+
+  limpar(){
+    this.quantidadeBala = 0;
+    this.quantidadeCoxinha = 0;
+    this.quantidadeHotdog = 0;
+    this.calcularTotalConta();
+  }
 }
